@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "6d7a806c-ad84-4b47-a122-75b890a4d9fb",
+		"name": "Web Socket 02",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21617836"
+	},
+	"item": [
+		{
+			"name": "Send Message To Brodcast",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sender\":\"Postman\",\r\n    \"type\": \"Welcome\",\r\n    \"message\": \"Welcome new user to my brodcast\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/broadcast-message",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"broadcast-message"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
